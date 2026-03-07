@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title & Favicon -->
-    <title>GitHub Issue Tracker</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
 
     <!-- Raw CSS -->
@@ -28,7 +28,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen">
+
+    <!-- Card -->
+
+    <div class="bg-white w-[420px] p-8 rounded-xl shadow-lg">
+
+        <!-- Logo -->
+
+        <div class="flex justify-center mb-4">
+            <img src="./assets/github-logo.png" class="w-16">
+        </div>
+
+        <!-- Title -->
+
+        <h1 class="text-center text-2xl font-bold mb-1">
+            GitHub Issues Tracker
+        </h1>
+
+        <p class="text-center text-gray-500 mb-6">
+            Sign in to manage your issues
+        </p>
+
+        <!-- Username -->
+
+        <label class="text-sm font-semibold">
+            Username
+        </label>
+
+        <input id="username" type="text" placeholder="Enter Username"
+            class="w-full border mt-1 mb-1 p-2 rounded focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+        <p class="text-sm text-purple-600 mb-4">
+            Default: admin
+        </p>
+
+        <!-- Password -->
+
+        <label class="text-sm font-semibold">
+            Password
+        </label>
+
+        <input id="password" type="password" placeholder="Enter Password"
+            class="w-full border mt-1 mb-1 p-2 rounded focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+        <p class="text-sm text-purple-600 mb-4">
+            Default: admin123
+        </p>
+
+        <!-- Button -->
+
+        <button onclick="login()"
+            class="w-full bg-[#4A00FF] text-white py-2 rounded-lg font-semibold hover:opacity-90 cursor-pointer">Sign In
+        </button>
+
+        <!-- OR -->
+
+        <div class="flex items-center my-6">
+
+            <hr class="flex-grow border-[#E4E4E7]">
+
+            <span class="mx-2 text-[#1F2937] text-sm">OR</span>
+
+            <hr class="flex-grow border-[#E4E4E7]">
+
+        </div>
+
+        <!-- Demo Credential Box -->
+
+        <p class="text-[#64748B] text-[14px] mb-2 text-center">Demo Credentials:</p>
+        
+        <div class="bg-[#F8FAFC] p-4 rounded text-center text-sm">
+
+            <span class="text-[#1F2937] font-semibold">Username:</span> <span class="text-[#1F2937]">admin</span>
+            <br>
+            <span class="text-[#1F2937] font-semibold">Password:</span> <span class="text-[#1F2937]">admin123</span>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function login() {
+
+            const username = document.getElementById("username").value
+            const password = document.getElementById("password").value
+
+            if (username === "admin" && password === "admin123") {
+
+                window.location.href = "dashboard.html"
+
+            }
+            else {
+
+                alert("Invalid Username or Password")
+
+            }
+
+        }
+
+    </script>
 
 </body>
 
