@@ -9,7 +9,8 @@ Ans: JavaScript-এ var, let, এবং const দিয়ে variable declare ক�
 
 Ex:
 
-```var x = 10;
+```javascript
+var x = 10;
 var x = 20; // আবার declare করা যায়
 x = 30; // value change করা যায়
 ```
@@ -22,7 +23,8 @@ x = 30; // value change করা যায়
 
 Ex: 
 
-```let y = 10;
+```javascript
+let y = 10;
 y = 20;   // value change করা যায়
 // let y = 30; ❌ আবার declare করা যাবে না
 ```
@@ -35,8 +37,8 @@ y = 20;   // value change করা যায়
 
 Ex:
 
-```const z = 10;
-// z = 20 ❌ value change করা যাবে না
+```javascript 
+const z = 10; // z = 20 ❌ value change করা যাবে না
 ```
 
 
@@ -47,11 +49,10 @@ Ans: Spread Operator (...) JavaScript-এ ব্যবহার করা হয়
 
 Ex:
 
-```const arr1 = [1, 2];
+```javascript
+const arr1 = [1, 2];
 const arr2 = [3, 4];
-
 const result = [...arr1, ...arr2];
-
 console.log(result); // Output: [1, 2, 3, 4]
 ```
 
@@ -67,7 +68,8 @@ Ans: JavaScript-এ map(), filter(), এবং forEach() তিনটাই arra
 
 Ex:
 
-```const numbers = [1,2,3];
+```javascript
+const numbers = [1,2,3];
 
 const result = numbers.map(n => n * 2); // Output: [2,4,6]
 ```
@@ -77,7 +79,8 @@ const result = numbers.map(n => n * 2); // Output: [2,4,6]
 
 Ex:
 
-``` const numbers = [1,2,3,4];
+```javascript
+ const numbers = [1,2,3,4];
 
 const result = numbers.filter(n => n > 2); // Output: [3,4]
 ```
@@ -88,7 +91,8 @@ const result = numbers.filter(n => n > 2); // Output: [3,4]
 
 Ex: 
 
-```const numbers = [1,2,3];
+```javascript
+const numbers = [1,2,3];
 
 numbers.forEach(n => {
   console.log(n);
@@ -100,14 +104,16 @@ Ans: Arrow Function (=>) হলো JavaScript-এর একটি ছোট ও 
 
 Ex: Normal Function-
 
-```function add(a, b) {
+```javascript
+function add(a, b) {
   return a + b;
 }
 ```
 
 Arrow Function-
 
-```const add = (a, b) => a + b;```
+```javascript
+const add = (a, b) => a + b;```
 
 
 # 5. What are template literals?
@@ -115,7 +121,8 @@ Ans: Template Literals হলো JavaScript-এ string লেখার আধু
 
 Ex: 
 
-```const name = "Rasel";
+```javascript
+const name = "Rasel";
 
 const text = `Hello ${name}`; // Output: Hello Rasel
 ```
