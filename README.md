@@ -113,7 +113,8 @@ function add(a, b) {
 Arrow Function-
 
 ```javascript
-const add = (a, b) => a + b;```
+const add = (a, b) => a + b;
+```
 
 
 # 5. What are template literals?
